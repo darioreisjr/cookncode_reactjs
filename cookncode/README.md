@@ -1,50 +1,101 @@
-# React + TypeScript + Vite
+# Cook&Code - Where Culinary Arts Meet Programming 🍳💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that combines cooking and programming, creating a unique platform for tech-savvy food enthusiasts.
 
-Currently, two official plugins are available:
+![Cook&Code Preview](https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🎨 Modern, responsive design
+- 📱 Mobile-first approach
+- 🎯 Intuitive user interface
+- 🔍 Recipe search and filtering
+- 👤 User profiles and authentication
+- ⭐ Featured recipes section
+- 📧 Newsletter subscription
+- 🌙 Smooth animations and transitions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend Framework**: React with TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Type Checking**: TypeScript
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/darioreisjr/cookncode_reactjs.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and visit `http://localhost:5173`
+
+## Project Structure
+
+```
+cookandcode/
+├── src/
+│   ├── components/         # React components
+│   │   ├── Header.tsx     # Navigation header
+│   │   ├── Hero.tsx       # Hero section
+│   │   ├── Footer.tsx     # Footer component
+│   │   └── ...
+│   ├── types/             # TypeScript types
+│   ├── App.tsx           # Main App component
+│   └── main.tsx          # Entry point
+├── public/               # Static assets
+└── package.json         # Project dependencies
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Color Scheme
+
+- Primary: `#e67e22` (Orange)
+- Secondary: `#3498db` (Blue)
+- Background: `#f4f4f4` (Light Gray)
+- Text: `#333333` (Soft Black)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- Website: [cookandcode.com](https://darioreis.dev)
+- Email: dev.darioreis@gmail.com
+- Twitter: [@cookandcode](https://twitter.com/darioreisjr)
+
+## Acknowledgments
+
+- Recipe images from [Unsplash](https://unsplash.com)
+- Icons from [Lucide](https://lucide.dev)
+- Built with [Vite](https://vitejs.dev)
