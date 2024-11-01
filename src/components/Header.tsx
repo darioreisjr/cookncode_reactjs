@@ -1,0 +1,113 @@
+import { Menu, ChefHat } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
+import CartButton from "./CartButton";
+import CartDrawer from "./CartDrawer";
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 w-full bg-white dark:bg-gray-900 shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <ChefHat className="h-8 w-8 text-[#e67e22]" />
+            <div>
+              <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+                Cook&Code
+              </h1>
+              <p className="text-xs text-[#3498db]">
+                Cooking ideas, coding flavors
+              </p>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/"
+              className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              to="/recipes"
+              className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
+            >
+              Recipes
+            </Link>
+            <Link
+              to="/about"
+              className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
+            >
+              Contact
+            </Link>
+            <ThemeToggle />
+            <div onClick={() => setIsCartOpen(true)}>
+              <CartButton />
+            </div>
+            <button className="bg-[#e67e22] text-white px-4 py-2 rounded-full hover:bg-[#d35400] transition-colors">
+              Add Recipe
+            </button>
+          </nav>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center space-x-4">
+            <ThemeToggle />
+            <div onClick={() => setIsCartOpen(true)}>
+              <CartButton />
+            </div>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
+              <Menu className="h-6 w-6 text-gray-700 dark:text-gray-300" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <nav className="md:hidden py-4 space-y-2">
+            <Link
+              to="/"
+              className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              Home
+            </Link>
+            <Link
+              to="/recipes"
+              className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              Recipes
+            </Link>
+            <Link
+              to="/about"
+              className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              Contact
+            </Link>
+            <button className="w-full text-left px-4 py-2 text-[#e67e22] hover:bg-gray-100 dark:hover:bg-gray-800">
+              Add Recipe
+            </button>
+          </nav>
+        )}
+      </div>
+
+      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+    </header>
+  );
+}
