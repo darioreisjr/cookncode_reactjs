@@ -16,7 +16,6 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <ChefHat className="h-8 w-8 text-[#e67e22]" />
-
             <div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">
                 Cook&Code
