@@ -12,21 +12,21 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            Where Culinary Arts Meet Programming
+            Onde as artes culinárias encontram a programação
           </h1>
 
           <p className="text-xl text-gray-100">
-            Cook&Code was born from the idea that cooking and coding share the
-            same creative spirit. Both require precision, creativity, and a dash
-            of innovation.
+            Cook&Code nasceu da ideia de que cozinhar e programar compartilham o
+            mesmo espírito criativo. Ambos exigem precisão, criatividade e traço
+            de inovação.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="bg-white text-[#e67e22] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-              Explore Recipes
+              Explorar receitas
             </button>
             <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
-              Start Cooking
+              Comece a cozinhar
             </button>
           </div>
         </div>

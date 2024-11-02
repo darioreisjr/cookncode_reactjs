@@ -8,8 +8,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Cook&Code</h3>
             <p className="text-sm">
-              Cooking ideas, coding flavors. Join our community of tech-savvy
-              food lovers.
+              Ideias culinárias, codificação de sabores. Junte-se à nossa
+              comunidade de especialistas em tecnologia amantes da comida.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white transition-colors">
@@ -29,27 +29,27 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">
-              Quick Links
+              Links rápidos
             </h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Home
+                  Início
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Recipes
+                  Receitas
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  About Us
+                  Sobre nós
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Contact
+                  Contato
                 </a>
               </li>
             </ul>
@@ -57,27 +57,27 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">
-              Categories
+              Categorias
             </h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Breakfast
+                  Café da manhã
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Main Course
+                  Prato principal
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Desserts
+                  Sobremesas
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Beverages
+                  Bebidas
                 </a>
               </li>
             </ul>
@@ -88,7 +88,8 @@ export default function Footer() {
               Newsletter
             </h3>
             <p className="text-sm mb-4">
-              Subscribe to get the latest recipes and coding tips!
+              Inscreva-se para receber as receitas e dicas de codificação mais
+              recentes!
             </p>
             <form className="space-y-2">
               <input
@@ -105,7 +106,8 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
           <p>
-            &copy; {new Date().getFullYear()} Cook&Code. All rights reserved.
+            &copy; {new Date().getFullYear()} Cook&Code. Todos os direitos
+            reservados.
           </p>
         </div>
       </div>

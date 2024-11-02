@@ -31,7 +31,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
           {/* Header */}
           <div className="p-4 border-b dark:border-gray-700 flex justify-between items-center">
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-              Shopping Cart
+              Carrinho de compras
             </h2>
             <button
               onClick={onClose}
@@ -45,7 +45,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
           <div className="flex-1 overflow-y-auto p-4">
             {state.items.length === 0 ? (
               <p className="text-center text-gray-500 dark:text-gray-400 mt-8">
-                Your cart is empty
+                Seu carrinho está vazio
               </p>
             ) : (
               <div className="space-y-4">

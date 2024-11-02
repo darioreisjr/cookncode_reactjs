@@ -1,4 +1,4 @@
-import { Search, Filter, ChefHat, Clock, ShoppingCart } from "lucide-react";
+import { Search, ChefHat, Clock, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { Recipe } from "../types";
 import { useCart } from "../contexts/CartContext";
@@ -81,10 +81,10 @@ export default function Recipes() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Explore Recipes
+            Explorar receitas
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Discover tech-inspired recipes from our community
+            Descubra receitas inspiradas em tecnologia da nossa comunidade
           </p>
         </div>
 
@@ -167,7 +167,7 @@ export default function Recipes() {
 
                 <div className="mt-4 flex items-center justify-between">
                   <span className="text-xl font-bold text-[#e67e22]">
-                    ${recipe.price.toFixed(2)}
+                    R${recipe.price.toFixed(2)}
                   </span>
                   <button
                     onClick={() =>
@@ -176,7 +176,7 @@ export default function Recipes() {
                     className="flex items-center space-x-2 bg-[#3498db] text-white px-4 py-2 rounded-lg hover:bg-[#2980b9] transition-colors"
                   >
                     <ShoppingCart className="h-4 w-4" />
-                    <span>Add to Cart</span>
+                    <span>adicionar ao carrinho</span>
                   </button>
                 </div>
               </div>

@@ -16,12 +16,13 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <ChefHat className="h-8 w-8 text-[#e67e22]" />
+
             <div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">
                 Cook&Code
               </h1>
               <p className="text-xs text-[#3498db]">
-                Cooking ideas, coding flavors
+                Idéias culinárias, codificação de sabores
               </p>
             </div>
           </Link>
@@ -32,32 +33,32 @@ export default function Header() {
               to="/"
               className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
             >
-              Home
+              Início
             </Link>
             <Link
               to="/recipes"
               className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
             >
-              Recipes
+              Receitas
             </Link>
             <Link
               to="/about"
               className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
             >
-              About
+              Sobre
             </Link>
             <Link
               to="/contact"
               className="text-gray-700 dark:text-gray-300 hover:text-[#e67e22] transition-colors"
             >
-              Contact
+              Contato
             </Link>
             <ThemeToggle />
             <div onClick={() => setIsCartOpen(true)}>
               <CartButton />
             </div>
             <button className="bg-[#e67e22] text-white px-4 py-2 rounded-full hover:bg-[#d35400] transition-colors">
-              Add Recipe
+              Adicionar receita
             </button>
           </nav>
 
@@ -80,28 +81,28 @@ export default function Header() {
               to="/"
               className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Home
+              Início
             </Link>
             <Link
               to="/recipes"
               className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Recipes
+              Receitas
             </Link>
             <Link
               to="/about"
               className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              About
+              Sobre
             </Link>
             <Link
               to="/contact"
               className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Contact
+              Contato
             </Link>
             <button className="w-full text-left px-4 py-2 text-[#e67e22] hover:bg-gray-100 dark:hover:bg-gray-800">
-              Add Recipe
+              Adicionar receita
             </button>
           </nav>
         )}
