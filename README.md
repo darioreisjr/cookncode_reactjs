@@ -1,23 +1,23 @@
-# Cook&Code - Where Culinary Arts Meet Programming 🍳💻
+# Cook&Code - Onde as artes culinárias encontram a programação 🍳💻
 
-A modern web application that combines cooking and programming, creating a unique platform for tech-savvy food enthusiasts.
+Um aplicativo web moderno que combina culinária e programação, criando uma plataforma única para entusiastas da gastronomia que entendem de tecnologia.
 
 ![Cook&Code Preview](https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80)
 
 ## Features
 
-- 🎨 Modern, responsive design
-- 📱 Mobile-first approach
-- 🎯 Intuitive user interface
-- 🔍 Recipe search and filtering
-- 👤 User profiles and authentication
-- ⭐ Featured recipes section
-- 📧 Newsletter subscription
-- 🌙 Smooth animations and transitions
+- 🎨 Design moderno e responsivo
+- 📱 Abordagem mobile-first
+- 🎯 Interface de usuário intuitiva
+- 🔍 Pesquisa e filtragem de receitas
+- 👤 Perfis de usuário e autenticação
+- ⭐ Seção de receitas em destaque
+- 📧 Assinatura de newsletter
+- 🌙 Animações e transições suaves
 
 ## Tech Stack
 
-- **Frontend Framework**: React with TypeScript
+- **Frontend Framework**: React com TypeScript
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Build Tool**: Vite
@@ -25,27 +25,27 @@ A modern web application that combines cooking and programming, creating a uniqu
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clonar o repositório:
 
 ```bash
 git clone https://github.com/darioreisjr/cookncode_reactjs.git
 ```
 
-2. Install dependencies:
+2. Instalar dependências:
 
 ```bash
 npm install
 ```
 
-3. Start the development server:
+3. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
+4. Abra seu navegador e visite `http://localhost:5173`
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 cookandcode/
@@ -62,21 +62,21 @@ cookandcode/
 └── package.json         # Project dependencies
 ```
 
-## Available Scripts
+## Scripts disponíveis
 
-- `npm run dev` - Start development server
+- `npm run dev` - Iniciar servidor de desenvolvimento
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## Color Scheme
+## Esquema de cores
 
 - Primary: `#e67e22` (Orange)
 - Secondary: `#3498db` (Blue)
 - Background: `#f4f4f4` (Light Gray)
 - Text: `#333333` (Soft Black)
 
-## Contributing
+## Contribuindo
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -86,15 +86,15 @@ cookandcode/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este projeto está licenciado sob a Licença MIT - veja o [LICENSE](LICENSE) arquivo para detalhes.
 
-## Contact
+## Contato
 
-- Website: [cookandcode.com](https://darioreis.dev)
+- Website: [cookandcode.com](https://cookncode.vercel.app/)
 - Email: dev.darioreis@gmail.com
 - Twitter: [@cookandcode](https://twitter.com/darioreisjr)
 
-## Acknowledgments
+## Agradecimentos
 
 - Recipe images from [Unsplash](https://unsplash.com)
 - Icons from [Lucide](https://lucide.dev)
