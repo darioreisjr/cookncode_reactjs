@@ -9,7 +9,7 @@ const RECIPES: Recipe[] = [
     title: "Python Pancakes",
     description: "Stack your breakfast like you stack your code",
     prepTime: 25,
-    difficulty: "easy",
+    difficulty: "Fácil",
     ingredients: ["2 cups flour", "2 eggs", "1 cup milk", "1 tsp vanilla"],
     instructions: [
       "Mix dry ingredients",
@@ -18,7 +18,7 @@ const RECIPES: Recipe[] = [
     ],
     imageUrl:
       "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80",
-    category: "Breakfast",
+    category: "Café da manhã",
     author: "Sarah Code",
     createdAt: "2024-03-10",
     price: 12.99,
@@ -28,12 +28,12 @@ const RECIPES: Recipe[] = [
     title: "React Risotto",
     description: "A state management approach to creamy risotto",
     prepTime: 45,
-    difficulty: "medium",
+    difficulty: "Intermediário",
     ingredients: ["Arborio rice", "Chicken stock", "White wine", "Parmesan"],
     instructions: ["Toast rice", "Add stock gradually", "Stir until creamy"],
     imageUrl:
       "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80",
-    category: "Main Course",
+    category: "Prato principal",
     author: "Mike Dev",
     createdAt: "2024-03-09",
     price: 24.99,
@@ -43,25 +43,31 @@ const RECIPES: Recipe[] = [
     title: "JavaScript Juice",
     description: "Blend your favorite fruits with async/await",
     prepTime: 15,
-    difficulty: "easy",
+    difficulty: "Fácil",
     ingredients: ["Orange", "Banana", "Mango", "Yogurt"],
     instructions: ["Peel fruits", "Blend until smooth", "Serve chilled"],
     imageUrl:
       "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=800&q=80",
-    category: "Beverages",
+    category: "Bebidas",
     author: "Lisa Tech",
     createdAt: "2024-03-08",
     price: 8.99,
   },
 ];
 
-const CATEGORIES = ["All", "Breakfast", "Main Course", "Desserts", "Beverages"];
-const DIFFICULTIES = ["all", "easy", "medium", "hard"];
+const CATEGORIES = [
+  "Todos",
+  "Café da manhã",
+  "Prato principal",
+  "Sobremesas",
+  "Bebidas",
+];
+const DIFFICULTIES = ["Todos", "Fácil", "Intermediário", "Avançado"];
 
 export default function Recipes() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedDifficulty, setSelectedDifficulty] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("Todos");
+  const [selectedDifficulty, setSelectedDifficulty] = useState("todos");
   const { dispatch } = useCart();
 
   const filteredRecipes = RECIPES.filter((recipe) => {
@@ -69,9 +75,10 @@ export default function Recipes() {
       recipe.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       recipe.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory =
-      selectedCategory === "All" || recipe.category === selectedCategory;
+      selectedCategory === "Todos" || recipe.category === selectedCategory;
     const matchesDifficulty =
-      selectedDifficulty === "all" || recipe.difficulty === selectedDifficulty;
+      selectedDifficulty === "todos" ||
+      recipe.difficulty === selectedDifficulty;
 
     return matchesSearch && matchesCategory && matchesDifficulty;
   });
@@ -95,7 +102,7 @@ export default function Recipes() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
               <input
                 type="text"
-                placeholder="Search recipes..."
+                placeholder="Pesquisar receitas..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-[#e67e22] focus:border-transparent"

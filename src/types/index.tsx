@@ -3,7 +3,7 @@ export interface Recipe {
   title: string;
   description: string;
   prepTime: number;
-  difficulty: "easy" | "medium" | "hard";
+  difficulty: "Fácil" | "Intermediário" | "Avançado";
   ingredients: string[];
   instructions: string[];
   imageUrl: string;

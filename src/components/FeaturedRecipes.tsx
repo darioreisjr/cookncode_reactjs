@@ -6,7 +6,7 @@ const FEATURED_RECIPES = [
     title: "Python Pancakes",
     description: "Stack your breakfast like you stack your code",
     prepTime: 25,
-    difficulty: "easy",
+    difficulty: "Fácil",
     imageUrl:
       "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80",
     author: "Sarah Code",
@@ -16,7 +16,7 @@ const FEATURED_RECIPES = [
     title: "React Risotto",
     description: "A state management approach to creamy risotto",
     prepTime: 45,
-    difficulty: "medium",
+    difficulty: "Intermediário",
     imageUrl:
       "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80",
     author: "Mike Dev",
@@ -26,7 +26,7 @@ const FEATURED_RECIPES = [
     title: "JavaScript Juice",
     description: "Blend your favorite fruits with async/await",
     prepTime: 15,
-    difficulty: "easy",
+    difficulty: "Fácil",
     imageUrl:
       "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=800&q=80",
     author: "Lisa Tech",
@@ -81,7 +81,7 @@ export default function FeaturedRecipes() {
                 </div>
 
                 <button className="mt-6 w-full bg-[#3498db] text-white py-2 rounded-lg hover:bg-[#2980b9] transition-colors">
-                  View Recipe
+                  Ver receita
                 </button>
               </div>
             </div>
