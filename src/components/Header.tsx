@@ -15,15 +15,12 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <ChefHat className="h-8 w-8 text-[#e67e22]" />
-            <div>
-              <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-                Cook&Code
-              </h1>
-              <p className="text-xs text-[#3498db]">
-                Idéias culinárias, codificação de sabores
-              </p>
-            </div>
+            <img
+              src="/public/LogoCook&Code.svg"
+              alt="Logo do projeto cook&code"
+              width={150}
+              height={150}
+            />
           </Link>
 
           {/* Desktop Navigation */}
