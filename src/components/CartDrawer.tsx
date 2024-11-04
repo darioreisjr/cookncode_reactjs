@@ -110,7 +110,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                 Total
               </span>
               <span className="text-lg font-bold text-[#e67e22]">
-                ${state.total.toFixed(2)}
+                R${state.total.toFixed(2)}
               </span>
             </div>
             <button
