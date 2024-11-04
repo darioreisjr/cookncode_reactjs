@@ -94,11 +94,11 @@ export default function Footer() {
             <form className="space-y-2">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Insira seu e-mail"
                 className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-[#e67e22]"
               />
               <button className="w-full bg-[#e67e22] text-white py-2 rounded hover:bg-[#d35400] transition-colors">
-                Subscribe
+                Inscrever-se
               </button>
             </form>
           </div>
