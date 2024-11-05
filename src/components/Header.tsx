@@ -16,7 +16,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/public/LogoCook&Code.svg"
+              src="/LogoCook&Code.svg"
               alt="Logo do projeto cook&code"
               width={150}
               height={150}
