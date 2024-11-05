@@ -1,10 +1,11 @@
 import { Code2, Utensils } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
     <div className="relative bg-gradient-to-br from-[#e67e22] to-[#d35400] text-white">
       <div className="absolute inset-0 bg-black opacity-10"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-8">
           <div className="flex justify-center space-x-4">
             <Utensils className="h-12 w-12" />
@@ -21,9 +22,9 @@ export default function Hero() {
             de inovação.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 ">
             <button className="bg-white text-[#e67e22] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-              Explorar receitas
+              <Link to="/recipes">Explorar receitas </Link>
             </button>
             <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
               Comece a cozinhar
